@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html>
+    <head><title>Survey Form</title></head>
+    <body style="background-color:#8FBC8F" >
+        <h1 style="text-align: center;">Survey Form</h1>
+        <br>
+        <form style="text-align: center; background-color:aliceblue ;" >
+            <label>Let us know how we can improve freeCodeCamp</label>
+            <br>
+            <div>
+                <label>Name:</label>
+                <input type="text" name="name" id="name" placeholder="Enter your nama" required/>
+            </div>
+            <br>
+            <div>
+                <label>Email:</label>
+                <input type="email" name="email" id="email" placeholder="Enter your Email" required/>
+            </div>
+            <br>
+            <div>
+                <label>Age:</label>
+                <input type="number" name="age" id="age" placeholder="Age" minlength="1" max="3" required/>
+            </div> 
+            <br>
+            <div>
+                <label>Which option best describes your current role?</label>
+                <select name="Student" id="student">
+                    <option value="student" selected > Student</option>
+                    <option value="colleg"> Colleg </option>
+                </select>
+            </div>
+            <br>
+            <div">
+                <label> How likely is that you would recommend freeCodeCamp to a friend? </label>
+                <br>
+
+                <input type="radio" name="A" value="Definitely" required />
+                <label>Definitely</label>
+                <br>
+                <input type="radio" name="A" value="Maybe" required />
+                <label>Maybe</label>
+                <br>
+                <input type="radio" name="A" value="Not sure" required />
+                <label>Not sure</label>
+            </div>
+            <br>
+            <br>
+            <div>
+                <label>What do you like most in FCC:</label>
+                <select name="Select an option" id="Select an option">
+                    <option value="student" selected > Select an option</option>
+                    <option value="colleg"> Another option </option>
+                </select>
+            </div>
+            <br>
+            <div">
+                <label> Things that should be improved in the future (Check all that apply): </label>
+                <br>
+                <input type="checkbox" name="A" value="Front" required multiple />
+                <label>Front-end Projects</label>
+                <br>
+                <input type="checkbox" name="A" value="Back" required multiple />
+                <label>Back-end Projects</label>
+                <br>
+                <input type="checkbox" name="A" value="Visualization" required multiple />
+                <label>Data Visualization</label>
+            </div>
+        </form>
+    </body>
+</html>
